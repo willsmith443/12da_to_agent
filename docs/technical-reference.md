@@ -12,7 +12,7 @@ and command are `twelve-da`, and the import is `twelve_da`. It requires Python
 
 ## Install and try
 
-Download the wheel and `SHA256SUMS` from the [GitHub release](https://github.com/northing-ai/12d-model/releases/tag/v0.4.0rc1).
+Download the wheel and `SHA256SUMS` from the [GitHub release](https://github.com/willsmith443/12da/releases/tag/v0.4.0rc1).
 Verify the wheel against `SHA256SUMS` before installing.
 On macOS run `shasum -a 256 -c SHA256SUMS`; on Linux use `sha256sum -c SHA256SUMS`.
 Run the command in the directory containing the listed artifacts.

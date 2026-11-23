@@ -21,8 +21,8 @@ classifiers = [
 twelve-da = "twelve_da.cli:main"
 
 [project.urls]
-Repository = "https://github.com/northing-ai/12d-model"
-Issues = "https://github.com/northing-ai/12d-model/issues"
+Repository = "https://github.com/willsmith443/12da"
+Issues = "https://github.com/willsmith443/12da/issues"
 
 [tool.setuptools]
 include-package-data = false
