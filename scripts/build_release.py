@@ -32,7 +32,7 @@ def allowed_source(name):
         return p.name in MODULES
     if len(p.parts) == 3 and p.parts[:2] == ('src', 'twelve_da.egg-info'):
         return p.name in EGG_INFO
-    if name in {'docs/inspection.md', 'scripts/build_release.py',
+    if name in {'docs/inspection.md', 'docs/technical-reference.md', 'scripts/build_release.py',
                 'tests/fixtures/synthetic/complete.12da'}:
         return True
     return len(p.parts) == 2 and p.parts[0] == 'tests' and p.name in TESTS
@@ -65,7 +65,7 @@ def audit_sdist(path):
         if len(names) != len(set(names)):
             raise ValueError('duplicate source members')
         required = (TOP_FILES - GENERATED_SOURCE) | {
-            'docs/inspection.md', 'tests/fixtures/synthetic/complete.12da',
+            'docs/inspection.md', 'docs/technical-reference.md', 'tests/fixtures/synthetic/complete.12da',
             'scripts/build_release.py'}
         required |= {f'src/twelve_da/{name}' for name in MODULES}
         required |= {f'tests/{name}' for name in TESTS}
