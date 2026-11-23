@@ -1,15 +1,17 @@
-# twelve-da
+# 12d Model
 
-Read-only Python library and CLI for supported 12d Archive text (`.12da`) and
-single-payload ZIP (`.12daz`) files. Python 3.12 or later; standard library only
-at runtime. Independently implemented from the published V15 format specification.
+An independent, open-source reader for 12d Model exports. It reads supported 12d
+Archive text (`.12da`) and single-payload ZIP (`.12daz`) files. The Python package
+and command are `twelve-da`, and the import is `twelve_da`. It requires Python
+3.12 or later and uses only the standard library at runtime.
 
 **0.4.0rc1 is an experimental community release candidate**, licensed under MIT. Native-software validation remains incomplete.
 `complete` coverage describes implemented format interpretation, not engineering acceptance.
 
 ## Install and try
 
-From the release artifact bundle, verify the wheel against `SHA256SUMS` before installing.
+Download the wheel and `SHA256SUMS` from the [GitHub release](https://github.com/northing-ai/12d-model/releases/tag/v0.4.0rc1).
+Verify the wheel against `SHA256SUMS` before installing.
 On macOS run `shasum -a 256 -c SHA256SUMS`; on Linux use `sha256sum -c SHA256SUMS`.
 Run the command in the directory containing the listed artifacts.
 A Python execution environment and access to the input file are required; an agent
@@ -270,5 +272,5 @@ establish compatibility with every exporter/version or native engineering accura
 Native composite semantics and broader native-reference validation remain unverified.
 See [third-party notices](THIRD_PARTY_NOTICES.md).
 
-`twelve-da` is an independent project, not affiliated with or endorsed by
+This reader is an independent project, not affiliated with or endorsed by
 12d Solutions. The format specification is linked, not redistributed.
