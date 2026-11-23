@@ -1,4 +1,4 @@
-# 12DA
+# 12DA to Agent
 
 **Find out what's inside a `.12da` or `.12daz` file.**
 
@@ -13,7 +13,7 @@ explain the results in plain English.
    or [Codex in the ChatGPT desktop app](https://learn.chatgpt.com/docs/environments/modes).
 2. Copy the prompt below and replace `your-file.12da` with your filename.
 
-> Use the reader at https://github.com/willsmith443/12da to inspect
+> Use the reader at https://github.com/willsmith443/12da_to_agent to inspect
 > `your-file.12da` in this folder. Follow the installation instructions in the
 > technical reference and run the reader locally. In plain English, tell me which
 > models, strings and surfaces are in the file. Flag anything the reader only
